@@ -17,11 +17,11 @@ module.exports = (req, res, next) => {
     // slotsData[req.body.slotNumber].capacity  = parseInt(slotsData[req.body.slotNumber].capacity );
     console.log(slotsData[req.body.slotNumber].capacity -1);
     slotsData[req.body.slotNumber].capacity = slotsData[req.body.slotNumber].capacity -1;
-    if (slotsData[req.body.slotNumber].subs.indexOf(req.body.userId) != -1) {
+    // if (slotsData[req.body.slotNumber].subs.indexOf(req.body.userId) != -1) {
       slotsData[req.body.slotNumber].subs.push(req.body.userId);
-    }else{
-      res.json({success:'registered'})
-    }
+    // }else{
+      // res.json({success:'registered'})
+    // }
     console.log(slotsData);
 
     // if (slotsData[req.body.slotNumber].capacity > 0) {
