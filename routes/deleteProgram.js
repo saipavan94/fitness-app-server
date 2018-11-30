@@ -35,7 +35,7 @@ module.exports = (req, res, next) => {
           console.log(cust.email);
           let mailOptions = {
             from: 'fitnessApp@fitness.com',
-            to: "pavansai.n@gmail.com",
+            to: cust.email,
             subject: req.body.data.name + " has been withdrawn.",
             text: "Your course '"+ req.body.data.name+"' no longer exisits. "
           };
